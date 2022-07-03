@@ -3,7 +3,7 @@ import { TransactionContext } from "../../TransactionContext";
 import { Container } from "./styles";
 
 export const TransactionsTable = () => {
-  const transactions = useContext(TransactionContext);
+  const { transactions } = useContext(TransactionContext);
 
   return (
     <Container>
@@ -11,7 +11,7 @@ export const TransactionsTable = () => {
         <thead>
           <tr>
             <th>Title</th>
-            <th>Value</th>
+            <th>Amount</th>
             <th>Category</th>
             <th>Date</th>
           </tr>
